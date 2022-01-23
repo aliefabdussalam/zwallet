@@ -82,12 +82,12 @@ Below is a sample screenshot of the App Zwallet website display for users.
 ---------------------------------------------------
 Display Web|
 :-----------------------:
-![](img/landing%20.page.PNG)|
+![](img/landingpage.PNG)|
 ![](img/signup.PNG)|
 ![](img/dashboard.PNG)|
 ![](img/transfer.PNG)|
 ![](img/transfernext.PNG)|
-![](img/top%20.up.PNG)|
+![](img/topup.PNG)|
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
