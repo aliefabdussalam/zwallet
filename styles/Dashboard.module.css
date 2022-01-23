@@ -1,0 +1,24 @@
+.colorGreen {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #1ec15f;
+  }
+  
+  .colorRed {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #ff5b37;
+  }
+  .profilpict{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 3px
+}
