@@ -68,7 +68,7 @@ For the backend repository link [Zwallet-Backend](https://github.com/aliefabduss
    npm install
    ```
 4. Enter your API in `.env`
-   ```
+  ```
   HOSTNAME="your host"
   PORT="your port"
   NEXT_PUBLIC_API_URL=http://$HOSTNAME:$PORT
@@ -82,12 +82,12 @@ Below is a sample screenshot of the App Zwallet website display for users.
 ---------------------------------------------------
 Display Web|
 :-----------------------:
-![](img/landing page.png)
-![](img/signup.png)
-![](img/dashboard.png)
-![](img/transfer.png)
-![](img/transfernext.png)
-![](img/top up.png)
+![](img/landing page.png)|
+![](img/signup.png)|
+![](img/dashboard.png)|
+![](img/transfer.png)|
+![](img/transfernext.png)|
+![](img/top up.png)|
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
