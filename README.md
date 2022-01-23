@@ -82,8 +82,8 @@ Below is a sample screenshot of the App Zwallet website display for users.
 ---------------------------------------------------
 Display Web|
 :-----------------------:
-![](img/landing page.png)|
-![](img/signup.png)|
+![](img/landing page.PNG)|
+![](img/signup.PNG)|
 ![](img/dashboard.png)|
 ![](img/transfer.png)|
 ![](img/transfernext.png)|
