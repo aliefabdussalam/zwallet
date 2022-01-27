@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router'
 import LayoutDefault from "../../layout/default"
 import { useState } from 'react';
+import { API_URL } from '../../helper'
 import axios from 'axios';
  
 
@@ -60,7 +61,7 @@ export default function Topup(){
           note: "topup"
         };
         axios
-          .post(`http://localhost:8080/topup`, data, { headers })
+          .post(`${API_URL}/topup`, data, { headers })
           .then((res) => {           
             setNominal("");
             alert("Top up berhasil");

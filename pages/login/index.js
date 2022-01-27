@@ -1,6 +1,7 @@
 import Link from "next/link"
 import axios from "axios"
 import {useRouter} from 'next/router'
+import { API_URL } from '../../helper'
 import { useState } from 'react'
 export default function Login(){
     const [user, setUser] = useState({
@@ -17,7 +18,7 @@ export default function Login(){
       const router = useRouter()
       const submitLogin = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8080/login', user)
+        axios.post(`${API_URL}/login`, user)
          .then((response) => {
           router.push('/dashboard')
           const token = response.data

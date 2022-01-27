@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BsBell } from "react-icons/bs";
-import styles from "../styles/Navbar.module.css"
-import { API_URL } from '../helper'
+import styles from "../../styles/Navbar.module.css"
+import { API_URL } from '../../helper'
 
 const Navbar = () =>{
 const [user, setUser] = useState({});
 useEffect(() => {
     const id = localStorage.getItem("iduser")
     axios
-    .get(`http://localhost:8080/user/${id}`)
+    .get(`${API_URL}/user/${id}`)
     .then((res) => {
       setUser(res.data.result);
     })

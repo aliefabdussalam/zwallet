@@ -1,9 +1,7 @@
 import {useRouter} from 'next/router'
 import React, {useState, useEffect} from 'react'
 import LayoutDefault from "../../layout/default"
-import Link from "next/link"
 import axios from "axios";
-import { BiSearch } from "react-icons/bi";
 import { API_URL } from '../../helper'
 import styles from '../../styles/Transfer.module.css'
 
@@ -13,7 +11,7 @@ export default function Transfer(){
     const [receiver, setReceiver] = useState([]);
     useEffect(() => {
         axios
-          .get(`http://localhost:8080/user`)
+          .get(`${API_URL}/user`)
           .then((res) => {
             setReceiver(res.data.result);
           })
@@ -24,7 +22,7 @@ export default function Transfer(){
       const submitSearch = (e) => {
         e.preventDefault();
         axios
-          .get(`http://localhost:8080/user?search=${search}`)
+          .get(`${API_URL}/user?search=${search}`)
           .then((res) => {
             setReceiver(res.data.result);
           })

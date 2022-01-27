@@ -1,6 +1,7 @@
 import Link from "next/link"
 import axios from "axios"
 import {useRouter} from 'next/router'
+import { API_URL } from '../../helper'
 import { useState } from 'react'
 export default function Register(){
     const router = useRouter()
@@ -21,7 +22,7 @@ export default function Register(){
 
     const handleSubmit = (e) => {
         e.preventDefault() 
-        axios.post('http://localhost:8080/register', form)
+        axios.post(`${API_URL}/register`, form)
         .then((response) => {
             router.push('/login')
             alert("registrasi berhasil silahkan login terlebih dahulu")

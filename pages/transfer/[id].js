@@ -16,7 +16,7 @@ const Transfer = () => {
     const idReceiver = router.query;
     const iduser = localStorage.getItem("iduser");
     axios
-      .get(`http://localhost:8080/user/${idReceiver.id}`)
+      .get(`${API_URL}/user/${idReceiver.id}`)
       .then((res) => {
         setreceiver(res.data.result);
       })
@@ -24,7 +24,7 @@ const Transfer = () => {
         alert(err.response.data.error);
       });
     axios
-      .get(`http://localhost:8080/user/${iduser}`)
+      .get(`${API_URL}/user/${iduser}`)
       .then((res) => {
           console.log(res.data.result)
         setUser(res.data.result);
@@ -73,7 +73,7 @@ const Transfer = () => {
       type: "Transfer",
     };
         axios
-          .post(`http://localhost:8080/transfer/${idReceiver.id}`, dataTf, { headers })
+          .post(`${API_URL}/transfer/${idReceiver.id}`, dataTf, { headers })
           .then((res) => {
             console.log(res.data.result.id);
             alert("transfer berhasil")

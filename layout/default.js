@@ -1,5 +1,5 @@
-import Navbar from "../component/navbar";
-import Footer from "../component/footer";
+import Navbar from "../pages/component/navbar";
+import Footer from "../pages/component/footer";
 import Link from "next/link"
 import { useRouter } from "next/router";
 
