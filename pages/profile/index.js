@@ -107,7 +107,7 @@ export default function Profile(){
                 className={`text-capitalize ${styles.nameProfileNav}`}
               >{`${user.firstname} ${user.lastname}`}</span>
               <small className={` mt-lg-2 mt-2 ${styles.statusTrans}`}>
-                +62 {user.number}
+                {user.number}
               </small>
             </div>
 
