@@ -38,7 +38,7 @@ export default function Register(){
                 <div className="img col-lg-6" style={{background:'rgb(99, 121, 244)'}}>
                     <div className="d-grid gap-2 col-10 mx-auto mt-5">
                         <div className='text-light col-3 fw-bold fs-3 ms-5'>Zwallet</div>
-                        <img src="https://github.com/aliefabdussalam/week3/blob/main/Group%2057.png?raw=true" alt=""></img>
+                        <img src="https://github.com/aliefabdussalam/week3/blob/main/Group%2057.png?raw=true" alt="" className="d-none d-lg-block d-xl-none"></img>
                         <h3 className="mt-5 text-light">App that Covering Banking Needs.</h3>
                         <p className="text-light mt-4 col-8">Zwallet is an application that focussing in banking needs for all users
                         in the world. Always updated and always following world trends.
